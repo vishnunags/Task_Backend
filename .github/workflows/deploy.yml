@@ -30,7 +30,7 @@ jobs:
 
       - name: Copy files to EC2
         run: |
-          scp -r -o StrictHostKeyChecking=no Dest/Dest_backend ec2-user@ec2-34-205-29-69.compute-1.amazonaws.com:/home/ec2-user/Task/Task_Backend
+          scp -r -o StrictHostKeyChecking=no Task/Task_Backend ec2-user@ec2-34-205-29-69.compute-1.amazonaws.com:/home/ec2-user/Task/Task_Backend
 
       - name: Install dependencies
         run: |
